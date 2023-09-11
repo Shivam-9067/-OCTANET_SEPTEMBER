@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body{
+    background-color: rgb(52, 52, 52);
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    color: white;
+   
+}
+
+.navbar a:hover{
+        transition: 0.1s linear;
+        border-bottom: 2px solid red;
+}
+
+.logo img{
+    width: 90px;
+    border-radius: 35px;
+    
+}
+
+.container{
+    margin-left: 90px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+   
+}
+.form{
+    margin-top: -105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form h2{
+    color: white;
+}
+.acform{
+   
+    display: flex;
+    flex-direction: column; 
+}
+
+.acform input{
+    text-align: center;
+    border: 2px solid red;
+    margin-top: 10px;
+    padding: 7px 50px;
+    border-radius: 8px;
+}
+.a{
+  margin-top: 8px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  border: 2px solid red;
+  }
+.pic img{
+  display: flex;
+  width: 400px;
+  margin: auto 0;
+}
+.btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border:none ;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+.last{
+    text-align: center;
+    color: rgb(248, 184, 184);
+}
+
+
+@media screen and (max-width: 650px) {
+    body {
+        background-color: rgb(52, 52, 52);
+    }
+    .container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+    }
+   
+    .pic img{
+      margin-top: 0px;
+      /* opacity: 0.5; */
+ 
+      }
+      .form{
+        position: fixed;
+        top: 40%;
+             opacity: 20;
+    }
+      .last{
+        text-align: center;
+        /* color: rgb(248, 184, 184); */
+    }
+    .navbar a{
+        text-decoration: none;
+        padding: 5px 5px;
+        font-size: 10px;
+        color: white;
+       
+    }
+  }
